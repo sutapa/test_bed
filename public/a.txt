@@ -1,0 +1,3 @@
+Magic of AJAX programming language.
+
+AJAX creates fast and dynamic web pages.
