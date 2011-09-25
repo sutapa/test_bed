@@ -1,4 +1,8 @@
 TestBed::Application.routes.draw do
+  get "pages/home"
+
+  get "pages/contact"
+
   resources :recipes
 
   # The priority is based upon order of creation:
