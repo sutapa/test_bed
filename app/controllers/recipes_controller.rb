@@ -2,6 +2,7 @@ class RecipesController < ApplicationController
   # GET /recipes
   # GET /recipes.xml
   def index
+    @title = "Recipe"
     @recipes = Recipe.all
 
     respond_to do |format|
@@ -13,6 +14,7 @@ class RecipesController < ApplicationController
   # GET /recipes/1
   # GET /recipes/1.xml
   def show
+    @title = "Recipe"
     @recipe = Recipe.find(params[:id])
 
     respond_to do |format|
@@ -24,6 +26,7 @@ class RecipesController < ApplicationController
   # GET /recipes/new
   # GET /recipes/new.xml
   def new
+    @title = "Recipe"
     @recipe = Recipe.new
 
     respond_to do |format|
@@ -34,12 +37,14 @@ class RecipesController < ApplicationController
 
   # GET /recipes/1/edit
   def edit
+    @title = "Recipe"
     @recipe = Recipe.find(params[:id])
   end
 
   # POST /recipes
   # POST /recipes.xml
   def create
+    @title = "Recipe"
     @recipe = Recipe.new(params[:recipe])
 
     respond_to do |format|
@@ -56,6 +61,7 @@ class RecipesController < ApplicationController
   # PUT /recipes/1
   # PUT /recipes/1.xml
   def update
+    @title = "Recipe"
     @recipe = Recipe.find(params[:id])
 
     respond_to do |format|
@@ -72,6 +78,7 @@ class RecipesController < ApplicationController
   # DELETE /recipes/1
   # DELETE /recipes/1.xml
   def destroy
+    @title = "Recipe"
     @recipe = Recipe.find(params[:id])
     @recipe.destroy
 

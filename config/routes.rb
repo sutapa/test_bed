@@ -1,4 +1,6 @@
 TestBed::Application.routes.draw do
+  resources :ingredients
+
   get "pages/home"
 
   get "pages/contact"
